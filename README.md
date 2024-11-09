@@ -46,7 +46,7 @@ This game was developed in under 48 hours during a game jam at a festival, with 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- PLAY -->
-<h2 id="play"> :question: Play the Game on the Web</h2>
+<h2 id="play"> :video_game: Play the Game on the Web</h2>
 
 <p align="justify"> 
 You can play the game directly in your browser on itch.io. No downloads required! Simply follow the link below to start playing: <a href="https://steelpotathor.itch.io/yeti-jam">Yeti Jam</a>
