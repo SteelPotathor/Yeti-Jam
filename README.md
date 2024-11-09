@@ -71,9 +71,11 @@ You can modify each of the 3 levels music! (on_hard_button_pressed = HARD, on_me
 <!-- CREDITS -->
 <h2 id="credits"> :scroll: Credits</h2>
 
-<p align="justify">AlbiGamesFestival for hosting the jam </p>
-<p align="justify">AlbiLab for organizing the jam </p>
-<p align="justify">My team for their hard work (credits in-game with roles) </p>
+<ol>
+  <li>AlbiGamesFestival for hosting the jam</li>
+  <li>AlbiLab for organizing the jam</li>
+  <li>My team for their hard work (credits in-game with roles)</li>
+</ol>
 
 [![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SteelPotathor)
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timoth%C3%A9e-da-costa-cantante-01aaa6336/)
