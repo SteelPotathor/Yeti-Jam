@@ -56,7 +56,7 @@ To install the game, simply download the project from my GitHub repository and i
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- ADD YOUR MUSIC -->
-<h2 id="add_your_music"> :musical_score: Implement your music</h2>
+<h2 id="add-your-music"> :musical_score: Implement your music</h2>
 
 <p align="justify"> 
 The notes in the game appear based on the music timing. To achieve this, I created a <a href="https://github.com/SteelPotathor/Song-Rhythm">Python script</a> that generates a JSON file containing the note timings for each track. Simply input the path to the JSON and the music file (MP3 or WAV) into the Godot script <b>Scripts/Difficulty.gd</b> to customize the game for any song.
