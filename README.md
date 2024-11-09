@@ -79,7 +79,7 @@ repository and run the executable file.
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- CHANGE MUSICS -->
-<h2 id="change_music"> :musical_score: Customize the music</h2>
+<h2 id="change-music"> :musical_score: Customize the music</h2>
 <p>You can modify each of the 3 levels music!</p>
 <ol>
     <li><strong>Generate the JSON</strong>: Run the <a href="https://github.com/SteelPotathor/Song-Rhythm">Python script</a> with the path to your music file (.mp3 or .wav) to create a JSON with note timings.</li>
