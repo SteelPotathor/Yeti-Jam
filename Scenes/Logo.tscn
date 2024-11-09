@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b45bvin80uxkt"]
+
+[ext_resource type="Texture2D" uid="uid://b7refdnhygly3" path="res://Sprites/game/boss/gorille outang.png" id="1_bjtoh"]
+
+[node name="Logo" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 321.0
+offset_bottom = 179.0
+
+[node name="Boss" type="Sprite2D" parent="."]
+position = Vector2(162, 87)
+texture = ExtResource("1_bjtoh")
+hframes = 8
+vframes = 6
+frame = 30

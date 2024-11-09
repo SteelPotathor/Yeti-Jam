@@ -1,0 +1,184 @@
+[gd_scene load_steps=8 format=3 uid="uid://d4a5ou60bmcf"]
+
+[ext_resource type="Script" path="res://Scripts/End.gd" id="1_83e5n"]
+[ext_resource type="Texture2D" uid="uid://dgdw2s8lvf2r2" path="res://Sprites/ui/play_again_button/play_again1.png" id="1_ffh28"]
+[ext_resource type="Texture2D" uid="uid://dc4k4syu55u7m" path="res://Sprites/ui/end_background.png" id="2_ogf66"]
+[ext_resource type="Texture2D" uid="uid://bcartepjirare" path="res://Sprites/ui/play_again_button/play_again2.png" id="2_pkhyt"]
+[ext_resource type="Texture2D" uid="uid://cbewr75apcri7" path="res://Sprites/ui/back_to_menu_button/back_to_menu1.png" id="3_3bstj"]
+[ext_resource type="Texture2D" uid="uid://fsr5fnv0s7xn" path="res://Sprites/ui/back_to_menu_button/back_to_menu2.png" id="4_5idbw"]
+[ext_resource type="FontFile" uid="uid://vcgm0lnssd1p" path="res://Fonts/Minecraft.ttf" id="7_y1jt0"]
+
+[node name="End" type="Node2D"]
+script = ExtResource("1_83e5n")
+
+[node name="EndBackground" type="Sprite2D" parent="."]
+position = Vector2(158, 59)
+scale = Vector2(0.336, 0.336)
+texture = ExtResource("2_ogf66")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 75.0
+offset_top = 9.0
+offset_right = 234.0
+offset_bottom = 121.0
+
+[node name="PlayAgain" type="TextureButton" parent="."]
+offset_left = 48.0
+offset_top = 128.0
+offset_right = 144.0
+offset_bottom = 168.0
+texture_normal = ExtResource("1_ffh28")
+texture_pressed = ExtResource("1_ffh28")
+texture_hover = ExtResource("2_pkhyt")
+
+[node name="BackToMenu" type="TextureButton" parent="."]
+offset_left = 176.0
+offset_top = 128.0
+offset_right = 272.0
+offset_bottom = 168.0
+texture_normal = ExtResource("3_3bstj")
+texture_pressed = ExtResource("3_3bstj")
+texture_hover = ExtResource("4_5idbw")
+
+[node name="GradeLabel" type="Label" parent="."]
+offset_left = 84.0
+offset_top = 8.0
+offset_right = 148.0
+offset_bottom = 24.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+text = "grade:"
+vertical_alignment = 1
+
+[node name="GradeNumber" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 8.0
+offset_right = 224.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 84.0
+offset_top = 24.0
+offset_right = 148.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+text = "final score:"
+vertical_alignment = 1
+
+[node name="ScoreNumber" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 24.0
+offset_right = 224.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ComboLabel" type="Label" parent="."]
+offset_left = 84.0
+offset_top = 40.0
+offset_right = 148.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+text = "max combo:"
+vertical_alignment = 1
+
+[node name="ComboNumber" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 40.0
+offset_right = 224.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="PerfectLabel" type="Label" parent="."]
+offset_left = 84.0
+offset_top = 56.0
+offset_right = 148.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+text = "great:"
+vertical_alignment = 1
+
+[node name="PerfectNumber" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 56.0
+offset_right = 224.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="GoodLabel" type="Label" parent="."]
+offset_left = 84.0
+offset_top = 72.0
+offset_right = 148.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+text = "good:"
+vertical_alignment = 1
+
+[node name="GoodNumber" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 72.0
+offset_right = 224.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="OkayLabel" type="Label" parent="."]
+offset_left = 84.0
+offset_top = 88.0
+offset_right = 148.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+text = "okay:"
+vertical_alignment = 1
+
+[node name="OkayNumber" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 88.0
+offset_right = 224.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="MissedLabel" type="Label" parent="."]
+offset_left = 84.0
+offset_top = 104.0
+offset_right = 148.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+text = "missed:"
+vertical_alignment = 1
+
+[node name="MissedNumber" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 104.0
+offset_right = 224.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_y1jt0")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[connection signal="pressed" from="PlayAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="BackToMenu" to="." method="_on_back_to_menu_pressed"]

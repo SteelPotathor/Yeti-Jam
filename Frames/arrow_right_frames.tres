@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://ctjqsl6s1v135"]
+
+[ext_resource type="Texture2D" uid="uid://u0y2yg15g1rw" path="res://Sprites/game/arrow_button/right/button_right.png" id="1_qemur"]
+[ext_resource type="Texture2D" uid="uid://b0wxp4e2j2ya0" path="res://Sprites/game/arrow_button/right/button_right_clicked.png" id="2_jffex"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qemur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jffex")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

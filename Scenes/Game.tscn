@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=3 uid="uid://crqqxkb3nmoyy"]
+
+[ext_resource type="Texture2D" uid="uid://e73s5toue2u1" path="res://Sprites/game/road/road.png" id="1_gmk17"]
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_w2h0b"]
+[ext_resource type="Texture2D" uid="uid://ch754k3rq8yqe" path="res://Sprites/ui/game_background.png" id="2_o72yr"]
+[ext_resource type="PackedScene" uid="uid://b71mhw8y1t7pc" path="res://Scenes/ArrowButton.tscn" id="2_r8yyp"]
+[ext_resource type="SpriteFrames" uid="uid://bwcvqs4jinw7k" path="res://Frames/arrow_left_frames.tres" id="4_2dk4b"]
+[ext_resource type="SpriteFrames" uid="uid://ctjqsl6s1v135" path="res://Frames/arrow_right_frames.tres" id="5_te7va"]
+[ext_resource type="FontFile" uid="uid://cpysrxflef3ib" path="res://Fonts/Font_RGH.ttf" id="7_iig4f"]
+[ext_resource type="PackedScene" uid="uid://c0wiypm35fpgd" path="res://Scenes/Character.tscn" id="9_enjf6"]
+[ext_resource type="PackedScene" uid="uid://bmvy1h5myexn4" path="res://Scenes/Boss.tscn" id="10_crjjp"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_w2h0b")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+
+[node name="GameBackground" type="Sprite2D" parent="."]
+position = Vector2(161, 64)
+scale = Vector2(0.316, 0.316)
+texture = ExtResource("2_o72yr")
+
+[node name="Road" type="Sprite2D" parent="."]
+position = Vector2(100, 0)
+texture = ExtResource("1_gmk17")
+centered = false
+
+[node name="Up" parent="." instance=ExtResource("2_r8yyp")]
+position = Vector2(160, 150)
+scale = Vector2(0.02, 0.02)
+
+[node name="Left" parent="." instance=ExtResource("2_r8yyp")]
+position = Vector2(120, 150)
+scale = Vector2(0.02, 0.02)
+sprite_frames = ExtResource("4_2dk4b")
+frame = 1
+frame_progress = 1.0
+
+[node name="Right" parent="." instance=ExtResource("2_r8yyp")]
+position = Vector2(200, 150)
+scale = Vector2(0.02, 0.02)
+sprite_frames = ExtResource("5_te7va")
+
+[node name="ScoreLabel" type="Label" parent="."]
+texture_filter = 1
+offset_left = 4.0
+offset_top = -2.0
+offset_right = 25.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_iig4f")
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="ComboLabel" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 20.0
+offset_right = 96.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.964706, 0.839216, 0.741176, 1)
+theme_override_fonts/font = ExtResource("7_iig4f")
+theme_override_font_sizes/font_size = 30
+
+[node name="Player" parent="." instance=ExtResource("9_enjf6")]
+position = Vector2(52, 87)
+
+[node name="Boss" parent="." instance=ExtResource("10_crjjp")]
+position = Vector2(273, 82)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

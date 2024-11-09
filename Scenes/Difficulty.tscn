@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccl3motacq12w"]
+
+[ext_resource type="Script" path="res://Scripts/Difficulty.gd" id="1_nsirm"]
+[ext_resource type="Texture2D" uid="uid://dyjq6qjujs360" path="res://Sprites/ui/background.menu.png" id="1_yl3v5"]
+
+[node name="Difficulty" type="Node2D"]
+script = ExtResource("1_nsirm")
+
+[node name="MenuBackground" type="Sprite2D" parent="."]
+position = Vector2(169, 48)
+scale = Vector2(0.331, 0.331)
+texture = ExtResource("1_yl3v5")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 79.0
+offset_top = 83.0
+offset_right = 257.0
+offset_bottom = 123.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="EasyButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Easy"
+
+[node name="Margin" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="MediumButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Medium"
+
+[node name="Margin2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="HardButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Hard
+"
+
+[connection signal="button_down" from="HBoxContainer/EasyButton" to="." method="_on_easy_button_button_down"]
+[connection signal="button_down" from="HBoxContainer/MediumButton" to="." method="_on_medium_button_button_down"]
+[connection signal="button_down" from="HBoxContainer/HardButton" to="." method="_on_hard_button_button_down"]
