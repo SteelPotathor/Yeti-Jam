@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="Yeti%20Jam%20Logo.png" alt="Yeti Jam Logo" width="120px" height="120px">
+  <img src="Yeti Jam Logo.png" alt="Yeti Jam Logo" width="120px" height="120px">
 </p>
 <h1 align="center"> Yeti Jam </h1>
 <h3 align="center"> Godot 4.3 - Musical Video Game </h3>
